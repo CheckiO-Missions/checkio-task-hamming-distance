@@ -1,0 +1,49 @@
+<p>
+La <em>distance de Hamming</em> entre deux entiers binaires est le nombre de bits qui 
+diffèrent entre leurs écritures binaires respectives.<br>
+    (<a href="http://en.wikipedia.org/wiki/Hamming_distance">En savoir davantage sur la distance de Hamming ( Wikipedia )</a>).<br>
+    Par exemple:
+</p>
+<pre>
+    117 = 0 1 1 1 0 1 0 1
+     17 = 0 0 0 1 0 0 0 1
+      H = 0+1+1+0+0+1+0+0 = 3
+
+</pre>
+<p>
+Deux nombres entiers décimaux positifs (N, M) vous sont donnés.
+Il vous faut déterminer la distance de Hamming entre ces deux nombres (d'après leur écriture binaire). 
+</p>
+
+<p>
+    <strong>Input: </strong> Deux arguments entiers (int).
+</p>
+
+<p>
+    <strong>Output: </strong> La distance de Hamming entre ces deux nombres (int).
+</p>
+
+<div class="for_info_only">
+
+<p>
+    <strong>Exemple:</strong>
+</p>
+<pre class="brush: python">checkio(117, 17) == 3
+checkio(1, 2) == 2
+checkio(16, 15) == 5</pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Utilisation: </strong>
+    C'est la base du code de Hamming et d'autres algorithmes de correction d'erreurs linéaires.
+    La distance de Hamming est utilisée en systématique comme mesure de distance génétique.
+    Sur une grille (par exemple un échiquier), la distance de Hamming est le nombre minimal de mouvements
+    que doit faire une tour pour se déplacer d'une case à une autre.
+</p>
+
+
+<p>
+    <strong>Precondition:</strong><br>
+    0 &lt; n &lt; 10<sup>6</sup><br>
+    0 &lt; m &lt; 10<sup>6</sup><br>
+</p>
