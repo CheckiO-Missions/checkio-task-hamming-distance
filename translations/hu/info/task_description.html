@@ -28,17 +28,15 @@
 <p>
     <strong>Példák:</strong>
 </p>
-<pre class="brush: python">
-    {% if interpreter.slug == "js-node" %}
-        hammingDistance(117, 17) == 3
-        hammingDistance(1, 2) == 2
-        hammingDistance(16, 15) == 5
-    {% else %}
-        checkio(117, 17) == 3
-        checkio(1, 2) == 2
-        checkio(16, 15) == 5
-    {% endif %}
-</pre>
+<pre class="brush: python">{% if interpreter.slug == "js-node" %}
+hammingDistance(117, 17) == 3
+hammingDistance(1, 2) == 2
+hammingDistance(16, 15) == 5
+{% else %}
+checkio(117, 17) == 3
+checkio(1, 2) == 2
+checkio(16, 15) == 5
+{% endif %}</pre>
 </div>
 
 <p class="for_info_only">
