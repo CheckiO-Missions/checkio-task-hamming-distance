@@ -14,8 +14,8 @@ api.add_listener(
             'python-27': unwrap_args,  # or None
             'python-3': unwrap_args
         },
-        # checker=None,  # checkers.float.comparison(2)
-        # add_allowed_modules=[],
-        # add_close_builtins=[],
-        # remove_allowed_modules=[]
+        function_name={
+            "python": "checkio",
+            "js": "hammingDistance"
+        }
     ).on_ready)
