@@ -1,7 +1,7 @@
 from checkio.signals import ON_CONNECT
 from checkio import api
 from checkio.referees.io import CheckiOReferee
-from checkio.referees.cover_codes import unwrap_args
+from checkio.referees.cover_codes import unwrap_args, js_unwrap_args
 
 from tests import TESTS
 
@@ -13,7 +13,7 @@ api.add_listener(
         cover_code={
             'python-27': unwrap_args,  # or None
             'python-3': unwrap_args,
-	    'js-node': cover_codes.js_unwrap_args
+	    'js-node': js_unwrap_args
 		},
         function_name={
             "python": "checkio",
