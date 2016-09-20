@@ -12,8 +12,8 @@ api.add_listener(
         tests=TESTS,
         cover_code={
             'python-27': unwrap_args,  # or None
-            'python-3': unwrap_args
-			'js-node': cover_codes.js_unwrap_args
+            'python-3': unwrap_args,
+	    'js-node': cover_codes.js_unwrap_args
 		},
         function_name={
             "python": "checkio",
