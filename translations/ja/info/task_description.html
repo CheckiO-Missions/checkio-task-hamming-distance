@@ -1,0 +1,55 @@
+﻿<p>
+    二つの2進数の間のハミング距離は異なるビットの数である。
+    (<a href="https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%9F%E3%83%B3%E3%82%B0%E8%B7%9D%E9%9B%A2">ウィキペディア「ハミング距離」</a>).
+    例えば:
+</p>
+<pre>
+    117 = 0 1 1 1 0 1 0 1
+     17 = 0 0 0 1 0 0 0 1
+      H = 0+1+1+0+0+1+0+0 = 3
+
+</pre>
+<p>
+    あなたには二つの正数(N, M)が10進数で与えられる。
+    各々が2進数の場合のハミング距離を計算すること。
+</p>
+
+<p>
+    <strong>入力: </strong> 2引数。(integer型)
+</p>
+
+<p>
+    <strong>出力: </strong> ハミング距離(integer型)
+</p>
+
+<div class="for_info_only">
+
+<p>
+    <strong>例:</strong>
+</p>
+<pre class="brush: python">{% if interpreter.slug == "js-node" %}
+hammingDistance(117, 17) == 3
+hammingDistance(1, 2) == 2
+hammingDistance(16, 15) == 5
+{% else %}
+checkio(117, 17) == 3
+checkio(1, 2) == 2
+checkio(16, 15) == 5
+{% endif %}</pre>
+</div>
+
+<p class="for_info_only">
+    <strong>どのように使われるか: </strong>
+    これはハミング符号や他の線形エラー訂正プログラムの基礎である。
+    ハミング距離は分類学において遺伝的距離の計測に使用される。
+    グリッド上(すなわちチェス盤) では
+    ハミング距離はルークがあるマスへ移動する際の最小の移動回数となる。
+
+</p>
+
+
+<p>
+    <strong>事前条件:</strong><br>
+    0 &lt; n &lt; 10<sup>6</sup><br>
+    0 &lt; m &lt; 10<sup>6</sup><br>
+</p>
