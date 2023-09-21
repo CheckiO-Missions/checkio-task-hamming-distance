@@ -1,6 +1,6 @@
 <p>
     A Hamming-távolság – az két bináris egész szám közötti eltérő bitek számát jelenti 
-    (<a href="http://hu.wikipedia.org/wiki/Hamming-t%C3%A1vols%C3%A1g">
+    (<a target="_blank" href="http://hu.wikipedia.org/wiki/Hamming-t%C3%A1vols%C3%A1g">
     bővebben a Hamming-távolságról a Wikipédiában olvashatunk</a>).<br>
     Például:
 </p>
@@ -16,11 +16,11 @@
 </p>
 
 <p>
-    <strong>Bementi adatok: </strong> két egész szám (int).
+    <strong>Bementi adatok: </strong> két egész szám ({% if is_js %}number{% else %}int{% endif %}).
 </p>
 
 <p>
-    <strong>Kimenti adatok: </strong> a Hamming-távolság egész számként (int).
+    <strong>Kimenti adatok: </strong> a Hamming-távolság egész számként ({% if is_js %}number{% else %}int{% endif %}).
 </p>
 
 <div class="for_info_only">
@@ -28,29 +28,23 @@
 <p>
     <strong>Példák:</strong>
 </p>
-<pre class="brush: python">{% if interpreter.slug == "js-node" %}
-hammingDistance(117, 17) == 3
-hammingDistance(1, 2) == 2
-hammingDistance(16, 15) == 5
-{% else %}
-checkio(117, 17) == 3
-checkio(1, 2) == 2
-checkio(16, 15) == 5
-{% endif %}</pre>
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 
 <p class="for_info_only">
-    <strong>Alkalmazása: </strong>
-    E feladat alapját képezi a Hamming-kódnak és más lineáris hibajavító szoftvereknek. 
+    <strong>Alkalmazása:</strong>
+    <p><i>
+        E feladat alapját képezi a Hamming-kódnak és más lineáris hibajavító szoftvereknek. 
     A Hamming-távolságot a rendszertanban is alkalmazzák a genetikai távolság 
     meghatározására. Egy rácsstruktúrában (grid) (pl. a sakktáblán), a Hamming-távolság – 
     az a bástya által az egyik mezőről a másikra tett minimális lépésszámot jelenti.
-
+    </i></p>
 </p>
 
 
 <p>
-    <strong>Előfeltételek:</strong><br>
-    0 &lt; n &lt; 10<sup>6</sup><br>
-    0 &lt; m &lt; 10<sup>6</sup><br>
+    <strong>Előfeltételek:</strong>
+    <ul>
+        <li><i>0 &lt; n, m &lt; 10<sup>6</sup></i></li>
+    </ul>
 </p>
