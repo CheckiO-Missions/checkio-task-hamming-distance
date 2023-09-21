@@ -1,14 +1,13 @@
 <p>
 La <em>distance de Hamming</em> entre deux entiers binaires est le nombre de bits qui 
 diffèrent entre leurs écritures binaires respectives.<br>
-    (<a href="http://en.wikipedia.org/wiki/Hamming_distance">En savoir davantage sur la distance de Hamming ( Wikipedia )</a>).<br>
+    (<a target="_blank" href="http://en.wikipedia.org/wiki/Hamming_distance">En savoir davantage sur la distance de Hamming ( Wikipedia )</a>).<br>
     Par exemple:
 </p>
 <pre>
     117 = 0 1 1 1 0 1 0 1
      17 = 0 0 0 1 0 0 0 1
       H = 0+1+1+0+0+1+0+0 = 3
-
 </pre>
 <p>
 Deux nombres entiers décimaux positifs (N, M) vous sont donnés.
@@ -16,11 +15,11 @@ Il vous faut déterminer la distance de Hamming entre ces deux nombres (d'après
 </p>
 
 <p>
-    <strong>Input: </strong> Deux arguments entiers (int).
+    <strong>Input:</strong> Deux arguments entiers ({% if is_js %}number{% else %}int{% endif %}).
 </p>
 
 <p>
-    <strong>Output: </strong> La distance de Hamming entre ces deux nombres (int).
+    <strong>Output:</strong> La distance de Hamming entre ces deux nombres ({% if is_js %}number{% else %}int{% endif %}).
 </p>
 
 <div class="for_info_only">
@@ -28,28 +27,21 @@ Il vous faut déterminer la distance de Hamming entre ces deux nombres (d'après
 <p>
     <strong>Exemple:</strong>
 </p>
-<pre class="brush: python">{% if interpreter.slug == "js-node" %}
-hammingDistance(117, 17) == 3
-hammingDistance(1, 2) == 2
-hammingDistance(16, 15) == 5
-{% else %}
-checkio(117, 17) == 3
-checkio(1, 2) == 2
-checkio(16, 15) == 5
-{% endif %}</pre>
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 
 <p class="for_info_only">
-    <strong>Utilisation: </strong>
-    C'est la base du code de Hamming et d'autres algorithmes de correction d'erreurs linéaires.
+    <strong>Utilisation:</strong>
+    <p><i>
+        C'est la base du code de Hamming et d'autres algorithmes de correction d'erreurs linéaires.
     La distance de Hamming est utilisée en systématique comme mesure de distance génétique.
     Sur une grille (par exemple un échiquier), la distance de Hamming est le nombre minimal de mouvements
     que doit faire une tour pour se déplacer d'une case à une autre.
+    </i></p>
 </p>
-
-
 <p>
-    <strong>Préconditions:</strong><br>
-    0 &lt; n &lt; 10<sup>6</sup><br>
-    0 &lt; m &lt; 10<sup>6</sup><br>
+    <strong>Préconditions:</strong>
+    <ul>
+        <li><i>0 &lt; n, m &lt; 10<sup>6</sup></i></li>
+    </ul>
 </p>
