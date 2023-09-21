@@ -1,0 +1,46 @@
+<p>
+    Odległość Hamminga między dwiema binarnymi liczbami całkowitymi to liczba pozycji bitowych, które różnią się między sobą
+    (<a target="_blank" href="http://en.wikipedia.org/wiki/Hamming_distance">read more about the Hamming distance on Wikipedia</a>).
+    Na przykład:
+</p>
+<pre>
+    117 = 0 1 1 1 0 1 0 1
+     17 = 0 0 0 1 0 0 0 1
+      H = 0+1+1+0+0+1+0+0 = 3
+</pre>
+
+<p>
+    Otrzymują Państwo dwie dodatnie liczby całkowite <code>N, M</code> w postaci dziesiętnej. Proszę obliczyć odległość Hamminga między tymi dwiema liczbami w postaci binarnej.
+</p>
+
+<p>
+   <strong>Dane wejściowe:</strong> Dwa argumenty w postaci liczb całkowitych <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Dane wyjściowe:</strong> Odległość Hamminga jako liczba całkowita <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<div class="for_info_only">
+
+<p>
+    <strong>Przykłady:</strong>
+</p>
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Sposób użycia:</strong>
+    <p><i>
+        Jest to podstawa kodu Hamminga i innych liniowych programów korygujących błędy.
+        Odległość Hamminga jest używana w systematyce jako miara odległości genetycznej.
+        Na siatce (np. szachownicy) odległość Hamminga to minimalna liczba ruchów
+        potrzebnych wieży do przejścia z jednej komórki do drugiej.
+    </i></p>
+</p>
+<p>
+    <strong>Warunek wstępny:</strong>
+    <ul>
+        <li><i>0 &lt; n, m &lt;<sup>106</sup></i></li>
+    </ul>
+</p>
