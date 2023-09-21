@@ -1,0 +1,46 @@
+<p>
+    两个二进制整数之间的汉明距离是相差的比特位数。
+    (<a target="_blank" href="http://en.wikipedia.org/wiki/Hamming_distance">read more about the Hamming distance on Wikipedia</a>)。
+    例如
+</p>
+<pre>
+    117 = 0 1 1 1 0 1 0 1
+     17 = 0 0 0 1 0 0 0 1
+      H = 0+1+1+0+0+1+0+0 = 3
+</pre>
+
+<p>
+    给你两个十进制形式的正整数<code>N, M</code> 。你应该用二进制形式计算这两个数之间的汉明距离。
+</p>
+
+<p>
+   <strong>输入：</strong>两个整数参数 <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出</strong>整数形式的汉明距离 <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<div class="for_info_only">
+
+<p>
+    <strong>举例说明</strong>
+</p>
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
+<p class="for_info_only">
+    <strong>如何使用</strong>
+    <p><i>
+        这是汉明码和其他线性纠错程序的基础。
+        汉明距离在系统学中被用作遗传距离的度量。
+        在一个网格（即：棋盘）上，汉明距离是指
+        车从一格移动到另一格所需的最小步数。
+    </i></p>
+</p>
+<p>
+    <strong>前提条件</strong>
+    <ul>
+        <li><i>0 &lt; n, m &lt;<sup>106</sup></i></li>
+    </ul>
+</p>
